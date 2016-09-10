@@ -7,6 +7,7 @@ var cors = require('cors');
 
 var environment = app.get('env');
 var port = process.env.PORT || 3000;
+var routes = require('./config/routes');
 
 var databaseUri = require('./config/db')(environment);
 mongoose.connect(databaseUri);
@@ -20,6 +21,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/api', routes);
+
 app.use(express.static("public"));
 
 
@@ -29,3 +32,32 @@ app.listen(port, function() {
 
 
 module.exports = app;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

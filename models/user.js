@@ -24,8 +24,7 @@ userSchema.set('toJSON', {
 userSchema.virtual('password')
   .set(function(password) {
     this._password = password;
-  }
-
+  
     this.passwordHash = bcrypt.hashSync(this._password, bcrypt.genSaltSync(8));
   });
   
