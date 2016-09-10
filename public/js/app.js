@@ -18,7 +18,7 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: "/templates/pets/index.html"
     })
     .state("petsNew", {
-      url: "/pets/:id",
+      url: "/pets/new",
       templateUrl: "templates/pets/new.html"
     })
     .state("petsShow", {
