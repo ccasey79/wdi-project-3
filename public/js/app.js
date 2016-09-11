@@ -15,20 +15,9 @@ function Router($stateProvider, $urlRouterProvider) {
     })
     .state("petsIndex", {
       url: "/pets",
-      templateUrl: "/templates/pets/index.html"
-    })
-    .state("petsNew", {
-      url: "/pets/new",
-      templateUrl: "templates/pets/new.html"
-    })
-    .state("petsShow", {
-      url: "/pets/:id",
-      templateUrl: "/templates/pets/show.html"
-    })
-    .state("petsEdit", {
-      url: "/pets/:id/edit",
-      templateUrl: "/templates/pets/edit.html"
-    })
+      templateUrl: "/templates/pets/index.html",
+      controller: "PetsIndexController as petsIndex"
+    });
 
   $urlRouterProvider.otherwise("/login");  
 }
