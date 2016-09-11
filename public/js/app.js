@@ -22,10 +22,45 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: 'templates/login.html', 
       controller: "LoginController as login"
     })
+
+// pets
+
     .state("petsIndex", {
       url: "/pets",
       templateUrl: "/templates/pets/index.html",
       controller: "PetsIndexController as petsIndex"
+    })
+    .state("petsNew", {
+      url: "/pets/new",
+      templateUrl: "templates/pets/new.html"
+    })
+    .state("petsShow", {
+      url: "/pets/:id",
+      templateUrl: "/templates/pets/show.html"
+     })
+    .state("petsEdit", {
+      url: "/pets/:id/edit",
+      templateUrl: "/templates/pets/edit.html"
+    })
+
+// reviews
+
+    .state("reviewsIndex", {
+      url: "/reviews",
+      templateUrl: "/templates/reviews/index.html",
+      controller: "ReviewsIndexController as reviewsIndex"
+    })
+    .state("reviewsNew", {
+      url: "/reviews/new",
+      templateUrl: "templates/reviews/new.html"
+    })
+    .state("reviewsShow", {
+      url: "/reviews/:id",
+      templateUrl: "/templates/reviews/show.html"
+    })
+    .state("reviewsEdit", {
+      url: "/reviews/:id/edit",
+      templateUrl: "/templates/reviews/edit.html"
     });
 
   $urlRouterProvider.otherwise("/login");  
