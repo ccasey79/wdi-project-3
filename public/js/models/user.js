@@ -2,17 +2,12 @@ angular
   .module("wdi-project-3")
   .factory("User", User);
 
-User.$inject = ["$resource"];
-function User($resource) {
+User.$inject = ["$resource", "API_URL"];
+function User($resource, API_URL) {
 
-  var User = $resource("http://localhost:3000/api/user/:id", { id: '@_id' }, {
+  return $resource(API_URL + "/users", { id: '@_id' }, {
     update: { method: "PUT" },
-    login: { method: "POST" + "/login" },
-    register: { method: "POST" + "/register" }
-
-
+    login: { method: "POST", url: API_URL + "/login" },
+    register: { method: "POST", url: API_URL + "/register" }
   });
-
-  return User;
-
 }  
