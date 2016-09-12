@@ -15,7 +15,7 @@ function petCreate(req, res) {
 }
 
 function petShow(req, res) {
-  Pet.findById(req.param.id, function(err, pet) {
+  Pet.findById(req.params.id, function(err, pet) {
     if(err) return res.status(500).json(err);
     if(!pet) return res.status(404).json({ message: "Could not find a pet with that id"});
     return res.status(200).json(pet);

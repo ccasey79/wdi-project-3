@@ -4,7 +4,8 @@ var reviewSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   address: { type: String },
   content: { type: String },
-  latlong: { type: Number },
+  lat: { type: Number },
+  lng: { type: Number },
   rating: { type: Number },
   user: { type: String, required: true, unique: true }
 });
