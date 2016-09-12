@@ -1,12 +1,14 @@
 var mongoose = require('mongoose');
 var User = require('../models/user');
 var Pet = require('../models/pet');
+var Review = require('../models/review');
 
 var databaseUri = require('../config/db')('development');
 mongoose.connect(databaseUri);
 
 User.collection.drop();
 Pet.collection.drop();
+Review.collection.drop();
 
 User.create([
   {
@@ -16,7 +18,7 @@ User.create([
     passwordConfirmation: "password"
   }
 ], function(err, users) {
-  Pet.create([
+Pet.create([
   {
     name: "Charlie",
     breed: "West Highland Terrier",
@@ -24,13 +26,25 @@ User.create([
     age: 5
   }
 ], function(err, pet) {
+Review.create([
+  {
+    name: "Caister Point Beach",
+    address: "Great Yarmouth",
+    content: "Sandy beach with cafe and restaurant facilities",
+    lat: 36.466684,
+    lng: -94.273045,
+    rating: 4,
+    user: "Bob Brown"
+  }
+], function(err, review) {    
   console.log(users.length + " users created!");
   console.log(pet.length + " pet created!");
+  console.log(review.length + " review created!");
 
   mongoose.connection.close();
- });
-})
-
+    });
+  });
+});
 
 
   

@@ -1,5 +1,5 @@
 
-<h1>Pets new page</h1>
+<h3>Pets new page</h3>
 
 <form ng-submit="petsNew.create()">
   <div class="form-group"> 
@@ -12,6 +12,18 @@
     <input type="number" name="age" ng-model="petsNew.new.age" placeholder="Age">
 
     <button>Save</button>
+    <button type="button" ui-sref="petsShow({ id: petsEdit.selected._id })">Cancel</button>
 
   </div>
 </form>  
+
+
+
+
+
+
+
+
+
+
+

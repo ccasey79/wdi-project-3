@@ -29,7 +29,7 @@ function Router($stateProvider, $urlRouterProvider) {
     })
     .state("petsNew", {
       url: "/pets/new",
-      templateUrl: "templates/pets/new.html",
+      templateUrl: "/templates/pets/new.html",
       controller: "PetsNewController as petsNew"
     })
     .state("petsShow", {
@@ -37,24 +37,21 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: "/templates/pets/show.html",
       controller: "PetsShowController as petsShow"
      })
-    // .state("petsEdit", {
-    //   url: "/pets/:id/edit",
-    //   templateUrl: "/templates/pets/edit.html"
-    //   controller: "PetsEditController as PetsEdit"
-    // })
-
-// reviews
-
-    // .state("reviewsIndex", {
-    //   url: "/reviews",
-    //   templateUrl: "/templates/reviews/index.html",
-    //   controller: "ReviewsIndexController as reviewsIndex"
-    // })
-    // .state("reviewsNew", {
-    //   url: "/reviews/new",
-    //   templateUrl: "templates/reviews/new.html"
-    //   controller: "ReviewsNewController as reviewsNew"
-    // })
+    .state("petsEdit", {
+      url: "/pets/:id/edit",
+      templateUrl: "/templates/pets/edit.html",
+      controller: "PetsEditController as petsEdit"
+    })
+    .state("reviewsIndex", {
+      url: "/reviews",
+      templateUrl: "/templates/reviews/index.html",
+      controller: "ReviewsIndexController as reviewsIndex"
+    })
+    .state("reviewsNew", {
+      url: "/reviews/new",
+      templateUrl: "templates/reviews/new.html",
+      controller: "ReviewsNewController as reviewsNew"
+    });
     // .state("reviewsShow", {
     //   url: "/reviews/:id",
     //   templateUrl: "/templates/reviews/show.html"

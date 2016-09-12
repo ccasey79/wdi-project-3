@@ -1,3 +1,11 @@
 
 
 <h1>Review Index</h1>
+
+<ul>
+  <li ng-repeat="Review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
+    {{ review.name }}
+  </li>  
+</ul>
+
+<button ui-sref="reviewsNew">Add</button>

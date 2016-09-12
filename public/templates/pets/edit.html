@@ -1,0 +1,21 @@
+
+<h3>Pet edit page</h3>
+
+<form ng-submit="petsEdit.save()">
+  <div class="form-group">
+    <input type="text" name="name" ng-model="petsEdit.selected.name" placeholder="Name">
+
+    <input type="text" name="breed" ng-model="petsEdit.selected.breed" placeholder="Breed">
+
+    <input type="text" name="colour" ng-model="petsEdit.selected.colour" placeholder="Colour">
+
+    <input type="number" name="age" ng-model="petsEdit.selected.age" placeholder="Age">
+
+
+    <button>Update</button>
+    <button type="button" ui-sref="petsShow({ id: petsEdit.selected._id })">Cancel</button>
+    
+  </div>  
+</form>  
+
+

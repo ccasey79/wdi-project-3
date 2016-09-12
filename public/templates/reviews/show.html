@@ -1,3 +1,8 @@
 
 
-<h1>Review Show</h1>
+
+<h1>{{ reviewsShow.selected.name }}</h1>
+
+<button ui-sref="reviewsEdit{{ id: reviewsShow.selected._id })">Edit</button>
+
+<button ui-sref="reviewsShow">Delete</button>

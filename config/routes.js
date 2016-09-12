@@ -29,14 +29,14 @@ router.route('/pets/:id')
   .put(secureRoute, petsController.update)
   .delete(secureRoute, petsController.delete);
 
-// router.route('/reviews')
-//   .get(reviewsController.index)
-//   .post(secureRoute, reviewsController.create);
+router.route('/reviews')
+  .get(reviewsController.index)
+  .post(secureRoute, reviewsController.create);
 
-// router.route('/reviews/:id')
-//   .get(reviewsController.show)
-//   .put(secureRoute, reviewsController.update)
-//   .delete(secureRoute, reviewsController.delete);
+router.route('/reviews/:id')
+  .get(reviewsController.show)
+  .put(secureRoute, reviewsController.update)
+  .delete(secureRoute, reviewsController.delete);
 
 router.post('/register', authenticationsController.register);
 router.post('/login', authenticationsController.login);
