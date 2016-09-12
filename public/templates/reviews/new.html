@@ -1,18 +1,19 @@
 
+<div class="container">
+  <h1>Review new</h1>
 
-<h1>Review new</h1>
+  <form ng-submit="reviewsNew.create()">
+    <div class="form-group">
+        <input type="text" name="name" ng-model="reviewsNew.new.name" placeholder="Name"> 
+        <input type="text" name="address" ng-model="reviewsNew.new.address" placeholder="Address">
+        <input type="text" name="content" ng-model="reviewsNew.new.content" placeholder="Content">
+        <input type="number" step="any" name="lat" ng-model="reviewsNew.new.lat" placeholder="Lat">
+        <input type="number" step="any" name="lng" ng-model="reviewsNew.new.lng" placeholder="Lng">
+        <input type="number" name="rating" ng-model="reviewsNew.new.rating" placeholder="Rating">
+        <input type="text" name="user" ng-model="reviewsNew.new.user" placeholder="User">
+      <button>Save</button>
+      <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
 
-<form ng-submit="petsNew.create()">
-  <div class="form-group">
-      <input type="text" name="name" ng-model="reviewsNew.new.name" placeholder="Name"> 
-      <input type="text" name="address" ng-model="reviewsNew.new.address" placeholder="Address">
-      <input type="text" name="content" ng-model="reviewsNew.new.content" placeholder="Content">
-      <input type="number" step=any name="lat" ng-model="reviewsNew.new.lat" placeholder="Lat">
-      <input type="number" step=any name="lng" ng-model="reviewsNew.new.lng" placeholder="Lng">
-      <input type="number" name="rating" ng-model="reviewsNew.new.rating" placeholder="Rating">
-      <input type="text" name="user" ng-model="reviewsNew.new.user" placeholder="User">
-    <button>Save</button>
-    <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
-
-  </div>
-</form>
+    </div>
+  </form>
+</div>

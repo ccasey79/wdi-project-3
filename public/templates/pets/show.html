@@ -1,11 +1,11 @@
 
+<div class="container">
+  <h1>{{ petsShow.selected.name }}</h1>
 
-<h1>{{ petsShow.selected.name }}</h1>
+  <button ui-sref="petsEdit({ id: petsShow.selected._id })">Edit</button>
 
-<button ui-sref="petsEdit({ id: petsShow.selected._id })">Edit</button>
-
-<button ng-click="petsShow.delete()">Delete</button>
-
+  <button ng-click="petsShow.delete()">Delete</button>
+</div>
 
 
 

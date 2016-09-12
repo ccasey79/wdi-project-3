@@ -1,3 +1,24 @@
 
+<div class="container">
+  <h1>Review Edit</h1>
 
-<h1>Review Edit</h1>
+  <form ng-submit="reviewsEdit.save()">
+    <div class="form-group"> 
+
+      <input type="text" name="name" ng-model="reviewsEdit.selected.name" placeholder="Name">
+      <input type="text" name="address" ng-model="reviewsEdit.selected.address" placeholder="Address">
+      <input type="text" name="content" ng-model="reviewsEdit.selected.content" placeholder="Content">
+      <input type="number" step="any" name="lat" ng-model="reviewsEdit.selected.lat" placeholder="Lat">
+      <input type="number" step="any" name="lng" ng-model="reviewsEdit.selected.lng" placeholder="Lng">
+      <input type="number" name="rating" ng-model="reviewsEdit.selected.rating" placeholder="Rating">
+      <input type="text" name="user" ng-model="reviewsEdit.selected.user" placeholder="User">
+
+      <button>Update</button>
+      <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
+
+    </div>  
+  </form>
+</div>  
+
+
+

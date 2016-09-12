@@ -51,17 +51,17 @@ function Router($stateProvider, $urlRouterProvider) {
       url: "/reviews/new",
       templateUrl: "templates/reviews/new.html",
       controller: "ReviewsNewController as reviewsNew"
+    })
+    .state("reviewsShow", {
+      url: "/reviews/:id",
+      templateUrl: "/templates/reviews/show.html", 
+      controller: "ReviewsShowController as reviewsShow"
+    })
+    .state("reviewsEdit", {
+      url: "/reviews/:id/edit",
+      templateUrl: "/templates/reviews/edit.html",
+      controller: "ReviewsEditController as reviewsEdit"
     });
-    // .state("reviewsShow", {
-    //   url: "/reviews/:id",
-    //   templateUrl: "/templates/reviews/show.html"
-    //   controller: "ReviewsShowController as reviewsShow"
-    // })
-    // .state("reviewsEdit", {
-    //   url: "/reviews/:id/edit",
-    //   templateUrl: "/templates/reviews/edit.html"
-    //   controller: "ReviewsEditController as reviewsEdit"
-    // });
 
   $urlRouterProvider.otherwise("/login");  
 }

@@ -5,5 +5,5 @@ angular
 ReviewsIndexController.$inject = ["Review", "$state"];
 function ReviewsIndexController(Review, $state) {
   this.all = Review.query();
-  console.log (this.all);
+  console.log("Here are the reviews", this.all);
 }

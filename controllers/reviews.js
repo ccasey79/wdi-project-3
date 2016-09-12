@@ -30,7 +30,7 @@ function reviewUpdate(req, res) {
 }
 
 function reviewDelete(req, res) {
-  Review.findByAndRemove(req.params.id, function(err) {
+  Review.findByIdAndRemove(req.params.id, function(err) {
     if(err) return res.status(500).json(err);
     return res.status(204).send();
   });

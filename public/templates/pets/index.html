@@ -1,13 +1,15 @@
 
 
-<h1>Pet Index page</h1>
+<div class="container">
 
-<ul>
-  <li ng-repeat="pet in petsIndex.all" ui-sref="petsShow({ id: pet._id })">
-    {{ pet.name }}
-  </li>  
+    <h1>Pet Index page</h1>
 
-</ul>
+    <ul>
+      <li ng-repeat="pet in petsIndex.all" ui-sref="petsShow({ id: pet._id })">
+        {{ pet.name }}
+      </li>  
 
-<button ui-sref="petsNew">Add</button>
+    </ul>
 
+    <button ui-sref="petsNew">Add</button>
+</div>

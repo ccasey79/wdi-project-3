@@ -1,8 +1,14 @@
 
+<div class="container">
+  <h3>Review show page</h3>
+
+  <h1>{{ reviewsShow.selected.name }}</h1>
+
+  <button ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit</button>
+
+  <button ng-click="reviewsShow.delete()">Delete</button>
+</div>
 
 
-<h1>{{ reviewsShow.selected.name }}</h1>
 
-<button ui-sref="reviewsEdit{{ id: reviewsShow.selected._id })">Edit</button>
 
-<button ui-sref="reviewsShow">Delete</button>
