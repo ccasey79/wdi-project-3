@@ -2,7 +2,9 @@ angular
   .module('wdi-project-3', ["ngResource", "ui.router", "angular-jwt"])
   .constant("API_URL", "http://localhost:3000/api")
   .config(setupInterceptor)
-  .config(Router);
+  .config(Router)
+
+
 
 setupInterceptor.$inject = ["$httpProvider"];
 function setupInterceptor($httpProvider) {
@@ -21,6 +23,10 @@ function Router($stateProvider, $urlRouterProvider) {
       url: '/login',
       templateUrl: '/templates/login.html', 
       controller: "LoginController as login"
+    })
+    .state('home', {
+      url: '/home',
+      templateUrl: 'templates/home.html'
     })
     .state("petsIndex", {
       url: "/pets",

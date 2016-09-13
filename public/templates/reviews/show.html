@@ -4,6 +4,8 @@
 
   <h1>{{ reviewsShow.selected.name }}</h1>
 
+  <img ng-src="{{ reviewsShow.selected.image }}">
+
   <button ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit</button>
 
   <button ng-click="reviewsShow.delete()">Delete</button>

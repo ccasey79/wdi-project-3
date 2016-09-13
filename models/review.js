@@ -7,7 +7,8 @@ var reviewSchema = new mongoose.Schema({
   lat: { type: Number },
   lng: { type: Number },
   rating: { type: Number },
-  user: { type: String, required: true, unique: true }
+  user: { type: String, required: true, unique: true },
+  image: {type: String }
 });
 
 module.exports = mongoose.model('Review', reviewSchema);

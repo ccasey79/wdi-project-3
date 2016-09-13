@@ -34,7 +34,8 @@ Review.create([
     lat: 36.466684,
     lng: -94.273045,
     rating: 4,
-    user: "Bob Brown"
+    user: "Bob Brown",
+    image: "http://www.thebeachguide.co.uk/public/geophotos/1863011.jpg"
   }
 ], function(err, review) {    
   console.log(users.length + " users created!");
