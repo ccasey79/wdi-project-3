@@ -1,7 +1,7 @@
 dbURIs = {
-  test: "mongodb://localhost/project3-test",
-  development: "mongodb://localhost/project3-test",
-  production: process.env.MONGODB_URI || "mongodb://localhost/project3-test"
+  test: "mongodb://localhost/project4-test",
+  development: "mongodb://localhost/project4",
+  production: process.env.MONGODB_URI || "mongodb://localhost/project4"
 }
 
 module.exports = function(env) {

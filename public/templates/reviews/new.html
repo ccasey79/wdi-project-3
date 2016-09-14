@@ -1,20 +1,24 @@
-
 <div class="container">
   <h1>Review new</h1>
 
   <form ng-submit="reviewsNew.create()">
     <div class="form-group">
-        <input type="text" name="name" ng-model="reviewsNew.new.name" placeholder="Name"> 
-        <input type="text" name="address" ng-model="reviewsNew.new.address" placeholder="Address">
-        <input type="text" name="content" ng-model="reviewsNew.new.content" placeholder="Content">
-        <input type="number" step="any" name="lat" ng-model="reviewsNew.new.lat" placeholder="Lat">
-        <input type="number" step="any" name="lng" ng-model="reviewsNew.new.lng" placeholder="Lng">
-        <input type="number" name="rating" ng-model="reviewsNew.new.rating" placeholder="Rating">
-        <input type="text" name="user" ng-model="reviewsNew.new.user" placeholder="User">
-        <input type="text" name="image" ng-model="reviewsNew.new.image" placeholder="Image">
-      <button>Save</button>
-      <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
-
+      <input places-autocomplete type="text" name="name" ng-model="reviewsNew.new.name" placeholder="Name">
     </div>
+    <div class="form-group">
+      <input type="text" name="address" ng-model="reviewsNew.new.address" placeholder="Address">
+    </div>
+    <div class="form-group">
+      <textarea name="content" ng-model="reviewsNew.new.content" placeholder="Content"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="number" name="rating" ng-model="reviewsNew.new.rating" placeholder="Rating">
+    </div>
+    <div class="form-group">
+      <input type="text" name="image" ng-model="reviewsNew.new.image" placeholder="Image">
+    </div>
+
+    <button>Save</button>
+    <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
   </form>
 </div>

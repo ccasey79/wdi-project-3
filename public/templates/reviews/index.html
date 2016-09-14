@@ -5,10 +5,25 @@
   <ul>
     <li ng-repeat="review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
       {{ review.name }}
+      {{ review.address }}
+      {{ review.rating }}
     </li>  
   </ul>
 
   <button ui-sref="reviewsNew">Add</button>
 </div> 
 
-<g-map center="reviewsIndex.center"></g-map> 
+
+<div id="map" ng-controller="MapController as map">
+  <g-map center="map.center" markers="map.markers"></g-map>
+</div>
+
+
+
+<!-- <g-map center="reviewsIndex.center"></g-map>  -->
+
+<!-- <g-map center="map-center" markers="map.markers"></g-map> -->
+
+
+
+

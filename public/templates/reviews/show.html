@@ -6,9 +6,9 @@
 
   <img ng-src="{{ reviewsShow.selected.image }}">
 
-  <button ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit</button>
+  <button ng-if="reviewsShow.canEdit" ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit</button>
 
-  <button ng-click="reviewsShow.delete()">Delete</button>
+  <button ng-if="reviewsShow.canEdit" ng-click="reviewsShow.delete()">Delete</button>
 </div>
 
 

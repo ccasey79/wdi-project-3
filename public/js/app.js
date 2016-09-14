@@ -24,9 +24,14 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: '/templates/login.html', 
       controller: "LoginController as login"
     })
+    // .state('map', {
+    //   url: '/map',
+    //   templateUrl: '/templates/map.html',
+    //   controller: "MapController as map"
+    // })
     .state('home', {
       url: '/home',
-      templateUrl: 'templates/home.html'
+      templateUrl: '/templates/home.html'
     })
     .state("petsIndex", {
       url: "/pets",
@@ -55,7 +60,7 @@ function Router($stateProvider, $urlRouterProvider) {
     })
     .state("reviewsNew", {
       url: "/reviews/new",
-      templateUrl: "templates/reviews/new.html",
+      templateUrl: "/templates/reviews/new.html",
       controller: "ReviewsNewController as reviewsNew"
     })
     .state("reviewsShow", {

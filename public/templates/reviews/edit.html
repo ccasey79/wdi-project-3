@@ -3,21 +3,29 @@
   <h1>Review Edit</h1>
 
   <form ng-submit="reviewsEdit.save()">
-    <div class="form-group"> 
-
-      <input type="text" name="name" ng-model="reviewsEdit.selected.name" placeholder="Name">
+    <div class="form-group">
+      <input places-autocomplete type="text" name="name" ng-model="reviewsEdit.selected.name" placeholder="Name">
+    </div>
+    <div class="form-group">
       <input type="text" name="address" ng-model="reviewsEdit.selected.address" placeholder="Address">
-      <input type="text" name="content" ng-model="reviewsEdit.selected.content" placeholder="Content">
+    </div>
+    <div class="form-group">
+      <textarea type="text" name="content" ng-model="reviewsEdit.selected.content" placeholder="Content"></textarea></div>
+    <div class="form-group">
       <input type="number" step="any" name="lat" ng-model="reviewsEdit.selected.lat" placeholder="Lat">
+    </div>
+    <div class="form-group">
       <input type="number" step="any" name="lng" ng-model="reviewsEdit.selected.lng" placeholder="Lng">
+    </div>
+    <div class="form-group">
       <input type="number" name="rating" ng-model="reviewsEdit.selected.rating" placeholder="Rating">
-      <input type="text" name="user" ng-model="reviewsEdit.selected.user" placeholder="User">
+    </div>
+    <div class="form-group">
       <input type="text" name="image" ng-model="reviewsEdit.selected.image" placeholder="Image">
+    </div>
 
-      <button>Update</button>
-      <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
-
-    </div>  
+    <button>Update</button>
+    <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
   </form>
 </div>  
 
