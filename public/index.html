@@ -19,12 +19,15 @@
   <script src="/js/controllers/pets/show.js"></script>
   <script src="/js/controllers/pets/index.js"></script>
 
+  <script src="/js/controllers/users/index.js"></script>
+  <script src="/js/controllers/users/edit.js"></script>
+  <script src="/js/controllers/users/show.js"></script>
+
   <script src="/js/controllers/reviews/index.js"></script>
   <script src="/js/controllers/reviews/new.js"></script>
   <script src="/js/controllers/reviews/show.js"></script>      
   <script src="/js/controllers/reviews/edit.js"></script>
   <script src="/js/controllers/map.js"></script>
-
 
   <script src="/js/controllers/main.js"></script>
   <script src="/js/controllers/login.js"></script>
@@ -55,6 +58,9 @@
                   </li>
                   <li class="nav-item" ui-sref-active="active" ng-if="!main.currentUser">
                     <a class="nav-link" ui-sref="login">Login</a>
+                  </li>
+                  <li class="nav-item" ui-sref-active="active" ng-if="main.currentUser">
+                    <a class="nav-link" ui-sref="usersIndex">Users</a>
                   </li>
                   <li class="nav-item" ng-if="main.currentUser">
                     <a ng-click="main.logout()" class="nav-link">Logout</a>

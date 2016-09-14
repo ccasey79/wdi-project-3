@@ -4,6 +4,7 @@ var secret = require('../config/tokens').secret;
 var petsController = require('../controllers/pets');
 var reviewsController = require('../controllers/reviews');
 var authenticationsController = require('../controllers/authentications');
+var usersController = require('../controllers/users');
 
 // middleware to check for a secure route with a valid jwt route, check token
 
@@ -37,6 +38,13 @@ router.route('/reviews/:id')
   .get(reviewsController.show)
   .put(secureRoute, reviewsController.update)
   .delete(secureRoute, reviewsController.delete);
+
+router.route('/users')
+  .get(usersController.index);
+
+router.route('/users/:id')
+  .get(usersController.show)
+  .put(secureRoute, usersController.update);
 
 router.post('/register', authenticationsController.register);
 router.post('/login', authenticationsController.login);

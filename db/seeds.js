@@ -15,12 +15,16 @@ User.create([
     username: "ccasey79",
     email: "chris@chris.com",
     password: "password",
-    passwordConfirmation: "password"
+    passwordConfirmation: "password",
+    pet_name: "Pepper",
+    image: "http://vignette2.wikia.nocookie.net/ghostbusters/images/1/11/Bill_Murray.jpeg/revision/latest?cb=20081013140955"
   }, {
     username: "bobmurray",
     email: "bill@bill.com",
     password: "password",
-    passwordConfirmation: "password"
+    passwordConfirmation: "password",
+    pet_name: "Mavis",
+    image: "http://www.u927.com/wp-content/uploads/2016/02/bill-murray.jpg"
   }
 ], function(err, users) {
 Pet.create([

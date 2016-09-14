@@ -1,0 +1,30 @@
+
+<div class="container">
+  <h3>User Edit page</h3>
+
+  <form ng-submit="usersEdit.save()">
+    <div class="form-group">
+       <input type="text" class="form-control" name="username" ng-model="usersEdit.selected.username" placeholder="Username"> 
+    </div>   
+
+    <div class="form-group">   
+       <input type="text" class="form-control" name="email" ng-model="usersEdit.selected.email" placeholder="Email">
+    </div>   
+    <div class="form-group">
+      <input type="text" class="form-control" name="pet_name" ng-model="usersEdit.selected.pet_name" placeholder="Pet Name">
+    </div>
+    
+    <div class="form-group">  
+      <div><img src="{{usersEdit.selected.image}}"></div>
+      <input type="text" class="form-control" name="image" ng-model="usersEdit.selected.image" placeholder="Profile Image">
+    </div>  
+
+       <button>Update</button>
+       <button type="button" ui-sref="usersShow({ id: usersEdit.selected._id })">Cancel</button>
+
+     </div> 
+   </form> 
+
+</div>
+
+

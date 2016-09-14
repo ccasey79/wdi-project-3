@@ -1,0 +1,19 @@
+
+
+
+<div class="container">
+
+    <h1>User Index page</h1>
+
+    <ul>
+      <li ng-repeat="user in usersIndex.all" ui-sref="usersShow({ id: user._id })">
+        {{ user.username }}
+        {{ user.pet_name }}
+      </li>  
+
+    </ul>
+
+</div>
+
+
+
