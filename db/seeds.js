@@ -45,8 +45,8 @@ Review.create([
     name: "Kingsgate Bay",
     address: "Broadstairs",
     content: "Kingsgate Bay is a sheltered sandy cove backed by high white chalk cliffs. The beach is probably best known for its sea caves which are reputedly some of the best in the country.",
-    lat: 35.362107,
-    lng: -120.837368,
+    lat: 51.3833638,
+    lng: 1.4399069,
     rating: 6,
     user: users[1],
     image: "http://www.walkingbritain.co.uk/m/15/156109.jpg"
@@ -83,7 +83,7 @@ Review.create([
     content: "I have eaten here a number of times , however my last time was the final visit. Me and 3 friends ordered large mixed grills. They came out after waiting 45 minutes. They were served on sizzler plates and looked delicious.",
     lat: 52.6542023,
     lng: -2.0128102,
-    rating: 4
+    rating: 4,
     user: users [0],
     image: "http://images.pub-explorer.com/pubs/621/35010.jpg"  
   }, {
@@ -92,7 +92,7 @@ Review.create([
     content: "The beach here is backed by farm land and faces into the Bristol Channel with views across to Wales. Murky water and the muddy low tide sand will probably be enough to put most off the idea of swimming. If not the strong tidal currents should do.",
     lat: 51.3457142,
     lng: -2.9621818,
-    rating: 8
+    rating: 8,
     user: users [0],
     image: "http://www.thebeachguide.co.uk/public/geophotos/1539550.jpg"
   }, {

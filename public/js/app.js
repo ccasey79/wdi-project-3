@@ -24,11 +24,6 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: '/templates/login.html', 
       controller: "LoginController as login"
     })
-    // .state('map', {
-    //   url: '/map',
-    //   templateUrl: '/templates/map.html',
-    //   controller: "MapController as map"
-    // })
     .state('home', {
       url: '/home',
       templateUrl: '/templates/home.html'

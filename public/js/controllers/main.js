@@ -11,7 +11,7 @@ function MainController(TokenService, $state, $rootScope) {
   this.logout = function logout() {
     TokenService.clearToken();
     this.currentUser = null;
-    $state.go("reviewsIndex");
+    $state.go("home");
   }
 
   $rootScope.$on("loggedIn", function() {

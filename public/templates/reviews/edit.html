@@ -1,33 +1,39 @@
 
 <div class="container">
-  <h1>Review Edit</h1>
+  <h1>Edit your Review</h1>
 
   <form ng-submit="reviewsEdit.save()">
     <div class="form-group">
-      <input places-autocomplete type="text" name="name" ng-model="reviewsEdit.selected.name" placeholder="Name">
+      <input places-autocomplete type="text" class="form-control" name="name" ng-model="reviewsEdit.selected.name" placeholder="Name">
     </div>
     <div class="form-group">
-      <input type="text" name="address" ng-model="reviewsEdit.selected.address" placeholder="Address">
+      <input type="text" class="form-control" name="address" ng-model="reviewsEdit.selected.address" placeholder="Address">
     </div>
     <div class="form-group">
-      <textarea type="text" name="content" ng-model="reviewsEdit.selected.content" placeholder="Content"></textarea></div>
+      <textarea type="text" class="form-control" name="content" ng-model="reviewsEdit.selected.content" placeholder="Content"></textarea></div>
     <div class="form-group">
-      <input type="number" step="any" name="lat" ng-model="reviewsEdit.selected.lat" placeholder="Lat">
+      <input type="number" class="form-control" step="any" name="lat" ng-model="reviewsEdit.selected.lat" placeholder="Lat">
     </div>
     <div class="form-group">
-      <input type="number" step="any" name="lng" ng-model="reviewsEdit.selected.lng" placeholder="Lng">
+      <input type="number" class="form-control" step="any" name="lng" ng-model="reviewsEdit.selected.lng" placeholder="Lng">
     </div>
     <div class="form-group">
-      <input type="number" name="rating" ng-model="reviewsEdit.selected.rating" placeholder="Rating">
+      <input type="number" class="form-control" name="rating" ng-model="reviewsEdit.selected.rating" placeholder="Rating">
     </div>
     <div class="form-group">
-      <input type="text" name="image" ng-model="reviewsEdit.selected.image" placeholder="Image">
+      <input type="text" class="form-control" name="image" ng-model="reviewsEdit.selected.image" placeholder="Image">
     </div>
 
-    <button>Update</button>
-    <button type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
+    <button class="btn btn-info">Update review</button>
+    <button class="btn btn-info" type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel review</button>
   </form>
 </div>  
+
+
+
+
+
+
 
 
 

@@ -1,22 +1,24 @@
 
 <div class="container">
-  <h1>Review Index</h1>
+    
 
-  <ul>
-    <li ng-repeat="review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
-      {{ review.name }}
-      {{ review.address }}
-      {{ review.rating }}
-    </li>  
-  </ul>
+  <div id="map" ng-controller="MapController as map">
+    <g-map center="map.center" markers="map.markers"></g-map>
+  </div>  
 
-  <button ui-sref="reviewsNew">Add</button>
+  <button type="button" class="btn btn-info" ui-sref="reviewsNew">Add a Review</button>
+       
+   <div class="panel-group" ng-repeat="review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
+       <div class="panel panel-info">
+         <div class="panel-heading">{{ review.name }}</div>
+         <div class="panel-body">{{ review.address }} {{ review.rating }}</div>
+       </div>
+   </div> 
+
 </div> 
 
 
-<div id="map" ng-controller="MapController as map">
-  <g-map center="map.center" markers="map.markers"></g-map>
-</div>
+
 
 
 

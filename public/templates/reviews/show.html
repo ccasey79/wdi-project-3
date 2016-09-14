@@ -1,15 +1,21 @@
 
 <div class="container">
-  <h3>Review show page</h3>
-
-  <h1>{{ reviewsShow.selected.name }}</h1>
-
-  <img ng-src="{{ reviewsShow.selected.image }}">
-
-  <button ng-if="reviewsShow.canEdit" ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit</button>
-
-  <button ng-if="reviewsShow.canEdit" ng-click="reviewsShow.delete()">Delete</button>
-</div>
+  
+ <div class="showImage"> 
+  <div class="row">
+    <div class="col-md-9">
+      <div class="thumbnail">
+        <img ng-src="{{ reviewsShow.selected.image }}">
+        <div class="caption">
+          <h3>{{ reviewsShow.selected.name }}</h3>
+            <p>{{ reviewsShow.selected.content }}</p>
+            <button class="btn btn-info editshow" ng-if="reviewsShow.canEdit" ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit review</button>
+            <button class="btn btn-info"  ng-if="reviewsShow.canEdit" ng-click="reviewsShow.delete()">Delete review</button>  
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
 
 
 

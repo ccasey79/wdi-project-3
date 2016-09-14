@@ -10,7 +10,7 @@ function RegisterController(User, $state, $rootScope) {
   this.submit = function submit() {
     User.register(this.user, function(res) {
         $rootScope.$broadcast("loggedIn");
-        $state.go("reviewsIndex");
+        $state.go("home");
     });
   }
 } 
