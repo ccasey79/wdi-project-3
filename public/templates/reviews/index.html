@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container reviewindex">
     
 
   <div id="map" ng-controller="MapController as map">
@@ -11,7 +11,7 @@
    <div class="panel-group" ng-repeat="review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
        <div class="panel panel-info">
          <div class="panel-heading">{{ review.name }}</div>
-         <div class="panel-body">{{ review.address }} {{ review.rating }}</div>
+         <div class="panel-body">Address: {{ review.address }} Has a rating of {{ review.rating }} out 10</div>
        </div>
    </div> 
 

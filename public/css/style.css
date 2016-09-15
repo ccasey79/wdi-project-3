@@ -2,13 +2,14 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background-color: #fff5cc;
+  font-family: 'Lora', serif;
 }
 
 .g-map {
   height: 50vh;
   width: 80%;
   margin: auto;
-
 }
 
 .panel-group {
@@ -17,20 +18,129 @@ html, body {
 
 .panel-heading {
   font-size: 25px;
+  background-color: brown;
 }
 
+.panel-info>.panel-heading {
+    color: #31708f;
+    background-color: #ffebcc;
+    border-color: #bce8f1;
+}
+
+
+
+
+
 .navbar {
-    position: relative;
-    height: 80px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    border: 1px solid #D4D06A;
-    background-color: #FFFCAA;
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  /*border: 1px solid #D4D06A;*/
+  background-color: #ffebcc;
+}
+
+.navbar a {
+  font-size: 30px;
+  color: #804000;
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color:  #ffd9b3;
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .showImage {
   margin-left: 300px;
 }
+
+.reviewindex {
+  background-color: #f0f0f5;
+}
+
+.homePage {
+  background-image: url("/images/bulldog.jpg");
+  background-size: cover;
+  background-image: no-repeat;
+  width:1135px;
+  height:700px;
+  margin-left: 170px;
+}
+
+#submit {
+  width: 300px;
+  margin-left: 100px;
+}
+
+.loginPage {
+  width: 700px;
+  height: 700px;
+  padding: 0px;
+  background-image: url("/images/login_dog.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+/*.loginWell { 
+  text-align: center;
+}*/
+
+#loginHead {
+  margin-left: 200px;
+  font-family: 'Lobster', cursive;
+}
+
+.formEmail {
+  padding: 100px;
+
+}
+
+.registerPage {
+  width: 700px;
+  height: 700px;
+  padding: 0px;
+  background-image: url("/images/register_dog.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+/*.registerWell {
+  text-align: center;
+}*/
+
+#submitReg {
+  width: 300px;
+  margin-left: 200px;
+}
+
+#registerHead {
+  margin-left: 200px;
+  font-family: 'Lobster', cursive;
+}
+
+#homeTitle {
+  text-align: center;
+  color: white;
+  padding-top: 85px;
+  font-size: 80px;
+}
+
+#welcomeDetail {
+  color: white;
+  text-align: center;
+  margin-top: 130px;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
 
 
 

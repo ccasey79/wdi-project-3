@@ -1,9 +1,17 @@
 
 
-<div class="container">
-  <h1>Register page</h1>
+<div class="container registerPage">
+  
+<!-- <div class="well registerWell">
+    <h2>Register to Pet Friendly</h2> 
+  </div> -->
 
-  <form ng-submit="register.submit()">
+
+  <h1 id="registerHead">Pet Friendly</h1>
+
+
+
+  <form class="formEmail" ng-submit="register.submit()">
     <div class="form-group">
       <input type="text" name="username" class="form-control" ng-model="register.user.username" placeholder="Username">
     </div>
@@ -17,6 +25,6 @@
       <input type="password" name="passwordConfirmation" class="form-control" ng-model="register.user.passwordConfirmation" placeholder="Password confirmation">
     </div>
 
-    <input type="submit" value="Submit" class="btn btn-primary">
+    <input id="submit" type="submit" value="Submit" class="btn btn-primary">
   </form>
 </div>  

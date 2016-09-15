@@ -1,9 +1,28 @@
 
 
 <div class="container">
-  <h1>{{ usersShow.selected.username }}</h1>
-
-  <button ui-sref="usersEdit({ id: usersShow.selected._id })">Edit</button>
-
-  <button ng-click="usersShow.delete()">Delete</button>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img ng-src="{{ usersShow.selected.image }}">
+        <div class="caption">
+          <h1>{{ usersShow.selected.username }}</h1>
+          <p>{{ usersShow.selected.email }}</p>
+          <p>{{ usersShow.selected.pet_name }}</p>
+          <button class="btn btn-info" ui-sref="usersEdit({ id: usersShow.selected._id })">Edit</button>
+          <button class="btn btn-info" ng-click="usersShow.delete()">Delete</button>        
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
