@@ -1,14 +1,40 @@
 
 
 <div class="container">
+  <div class="golden">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="thumbnail">
+          <img src="/images/gr5.jpg" alt="golden" height="300" width="300">
+          <img src="/images/gr4.jpg" alt="golden" height="300" width="300"> 
+          <div class="caption">           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="golden">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="thumbnail">
+          <img src="/images/gr3.jpeg" alt="golden" height="300" width="300">
+          <img src="/images/gr6.jpg" alt="golden" height="300" width="300">      
+          <div class="caption">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
   <div class="row">
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <img ng-src="{{ usersShow.selected.image }}">
         <div class="caption">
-          <h1>{{ usersShow.selected.username }}</h1>
-          <p>{{ usersShow.selected.email }}</p>
-          <p>{{ usersShow.selected.pet_name }}</p>
+          <h1 id="userShow">{{ usersShow.selected.username }}</h1>
+          <p id="userEmail">Email: {{ usersShow.selected.email }}</p>
+          <p id="userPet">Dog Name: {{ usersShow.selected.pet_name }}</p>
           <button class="btn btn-info" ui-sref="usersEdit({ id: usersShow.selected._id })">Edit</button>
           <button class="btn btn-info" ng-click="usersShow.delete()">Delete</button>        
         </div>
@@ -16,6 +42,7 @@
     </div>
   </div>
 </div>
+
 
 
 

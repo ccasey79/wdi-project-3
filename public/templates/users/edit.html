@@ -1,6 +1,6 @@
 
-<div class="container">
-  <h3>User Edit page</h3>
+<div class="container useredit">
+  <h1 id="editHeaduser">Edit Profile</h1>
 
   <form ng-submit="usersEdit.save()">
     <div class="form-group">
@@ -16,11 +16,11 @@
     
     <div class="form-group">  
       <div><img src="{{usersEdit.selected.image}}"></div>
-      <input type="text" class="form-control" name="image" ng-model="usersEdit.selected.image" placeholder="Profile Image">
+      <!-- <input type="text" class="form-control" name="image" ng-model="usersEdit.selected.image" placeholder="Profile Image"> -->
     </div>  
 
-       <button>Update</button>
-       <button type="button" ui-sref="usersShow({ id: usersEdit.selected._id })">Cancel</button>
+       <button class="btn btn-info">Update</button>
+       <button class="btn btn-info" type="button" ui-sref="usersShow({ id: usersEdit.selected._id })">Cancel</button>
 
      </div> 
    </form> 

@@ -10,6 +10,8 @@ html, body {
   height: 50vh;
   width: 80%;
   margin: auto;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .panel-group {
@@ -22,14 +24,10 @@ html, body {
 }
 
 .panel-info>.panel-heading {
-    color: #31708f;
-    background-color: #ffebcc;
-    border-color: #bce8f1;
+    color: #804000;
+    background-color: #ffce99;
+    border-color: black;
 }
-
-
-
-
 
 .navbar {
   position: relative;
@@ -61,8 +59,19 @@ html, body {
 }
 
 .reviewindex {
-  background-color: #f0f0f5;
+  background-color: #e0e0eb;
+  border-radius: 5px;
 }
+
+/*.reviewedit  {
+  background-color: #e0e0eb;
+  border-radius: 5px;
+}*/
+
+/*.useredit {
+background-color: #e0e0eb;
+border-radius: 5px;
+}*/
 
 .homePage {
   background-image: url("/images/bulldog.jpg");
@@ -92,13 +101,13 @@ html, body {
 }*/
 
 #loginHead {
-  margin-left: 200px;
-  font-family: 'Lobster', cursive;
+  margin-left: 160px;
+  font-size: 60px;
+  margin-top: 50px;
 }
 
 .formEmail {
   padding: 100px;
-
 }
 
 .registerPage {
@@ -120,8 +129,9 @@ html, body {
 }
 
 #registerHead {
-  margin-left: 200px;
-  font-family: 'Lobster', cursive;
+  margin-left: 160px;
+  font-size: 60px;
+  margin-top: 50px;
 }
 
 #homeTitle {
@@ -140,6 +150,62 @@ html, body {
   margin-right: 30px;
 }
 
+#addressinfo {
+  font-weight: bold;
+  color: brown;
+  font-size: 17px;
+}
+
+#ratinginfo {
+  color: #804000;
+  font-size: 17px;
+  font-family: 'Lobster', cursive;
+}
+
+#petName {
+  color: #804000;
+}
+
+#userinfo {
+  font-size: 15px;
+  color: #804000;
+}
+
+#emailinfo {
+  font-size: 15px;
+  color: #804000;
+}
+
+.fa {
+  color: #804000; 
+  margin-left: 8px;
+}
+
+#userShow {
+  color: #804000;
+}
+
+#userEmail {
+  color: #804000;
+}
+
+#userPet {
+  color: #804000;
+}
+
+#editHeading {
+  font-family: 'Lobster', cursive;
+  color: #804000;
+}
+
+#editHeaduser {
+  font-family: 'Lobster', cursive;
+  color: #804000;
+}
+
+.golden {
+  float: right;
+}
 
 
 

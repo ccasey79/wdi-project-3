@@ -1,16 +1,16 @@
 <div class="container">
 
-    <h1>User Index page</h1>
+
   <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="user in usersIndex.all" ui-sref="usersShow({ id: user._id})">
       <div class="thumbnail">
-        <img ng-src="images/hotel.png" alt="...">
-        <div class="caption">
-          <h3>Pet Name: {{ user.pet_name }}</h3>
-          <p>Username: {{ user.username }}</p>
-          <p>Email: {{ user.email }}</p>
-         <!--  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
-        </div>
+        <img ng-src="http://67.media.tumblr.com/ea884efd16cdf361b79c51c80447cd8f/tumblr_nh7oj8VlLr1tvk4g1o1_500.jpg"
+            >
+          <div class="caption">
+            <h3 id="petName">Dog Name: {{ user.pet_name }}</h3>
+            <p id="userinfo">Username: </p><h4>{{ user.username }}</h4>
+            <p id="emailinfo">Email: </p><h4>{{ user.email }}</h4>
+          </div>
       </div>
     </div>
   </div>

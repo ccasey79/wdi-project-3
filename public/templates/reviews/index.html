@@ -6,12 +6,14 @@
     <g-map center="map.center" markers="map.markers"></g-map>
   </div>  
 
-  <button type="button" class="btn btn-info" ui-sref="reviewsNew">Add a Review</button>
+  <!-- <button type="button" class="btn btn-info fa fa-plus" ui-sref="reviewsNew">Add a Review</button> -->
+
+  <i class="fa fa-plus" ui-sref="reviewsNew" aria-hidden="true"> Review</i>
        
    <div class="panel-group" ng-repeat="review in reviewsIndex.all" ui-sref="reviewsShow({ id: review._id })">
        <div class="panel panel-info">
          <div class="panel-heading">{{ review.name }}</div>
-         <div class="panel-body">Address: {{ review.address }} Has a rating of {{ review.rating }} out 10</div>
+         <div class="panel-body"><span id="addressinfo">Address:</span> {{ review.address }} <span id="ratinginfo">  Has a rating of: {{ review.rating }} out of 10</span></div>
        </div>
    </div> 
 
