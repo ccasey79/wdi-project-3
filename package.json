@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/ccasey79/wdi-project-3#readme",
   "dependencies": {
+    "bower": "^1.7.9",
     "bcrypt": "^0.8.7",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
