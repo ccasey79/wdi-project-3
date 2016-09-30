@@ -1,6 +1,6 @@
 angular 
   .module('wdi-project-3', ["ngResource", "ui.router", "angular-jwt"])
-  .constant("API_URL", "https://fur2-app.herokuapp.com")
+  .constant("API_URL", "https://fur2-app.herokuapp.com/api")
   .config(setupInterceptor)
   .config(Router)
 
