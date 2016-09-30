@@ -3,7 +3,7 @@ var User = require('../models/user');
 var Pet = require('../models/pet');
 var Review = require('../models/review');
 
-var databaseUri = require('../config/db')('development');
+var databaseUri = require('../config/db')('production');
 mongoose.connect(databaseUri);
 
 User.collection.drop();
