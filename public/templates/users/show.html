@@ -35,8 +35,8 @@
           <h1 id="userShow">{{ usersShow.selected.username }}</h1>
           <p id="userEmail">Email: {{ usersShow.selected.email }}</p>
           <p id="userPet">Dog Name: {{ usersShow.selected.pet_name }}</p>
-          <button class="btn btn-info" ui-sref="usersEdit({ id: usersShow.selected._id })">Edit</button>
-          <button class="btn btn-info" ng-click="usersShow.delete()">Delete</button>        
+          <button class="btn btn-info edituser" ui-sref="usersEdit({ id: usersShow.selected._id })">Edit</button>
+          <button class="btn btn-info deleteuser" ng-click="usersShow.delete()">Delete</button>        
         </div>
       </div>
     </div>

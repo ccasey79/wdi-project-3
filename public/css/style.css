@@ -36,16 +36,29 @@ html, body {
   margin-top: 10px;
   /*border: 1px solid #D4D06A;*/
   background-color: #ffebcc;
+  margin-left: -14px;
+  margin-right: -12px;
+  border-color: #4d2600;
+  -webkit-box-shadow: 0 8px 6px 0px #999;
+  -moz-box-shadow: 0 8px 6px 0px #999;
+  box-shadow: 0 8px 6px 0px #999;
 }
 
 .navbar a {
-  font-size: 30px;
+  font-size: 20px;
   color: #804000;
 }
 
+.navbar-nav>li>a {
+  padding-right: 34px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .nav>li>a:hover {
-    text-decoration: none;
-    background-color:  #ffd9b3;
+    text-decoration: underline;
+    color: #4d2600;
+    background-color: #ffebcc;
 }
 
 .navbar-nav {
@@ -77,14 +90,18 @@ border-radius: 5px;
   background-image: url("/images/bulldog.jpg");
   background-size: cover;
   background-image: no-repeat;
-  width:1135px;
+  width:1163px;
   height:700px;
-  margin-left: 170px;
+  margin-left: 139px;
+  border-radius: 80px;
 }
 
 #submit {
   width: 300px;
   margin-left: 100px;
+  background-color: #55552b;
+  border-color: #55552b;
+  font-size: 20px;
 }
 
 .loginPage {
@@ -153,13 +170,14 @@ border-radius: 5px;
 #addressinfo {
   font-weight: bold;
   color: brown;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 #ratinginfo {
   color: #804000;
   font-size: 17px;
   font-family: 'Lobster', cursive;
+  margin-left: 20px;
 }
 
 #petName {
@@ -207,6 +225,119 @@ border-radius: 5px;
   float: right;
 }
 
+.proimages {
+  margin-left: 25px;
+}
+
+.editshow {
+  background-color: #804000;
+  border-color: #804000;
+  font-size: 15px;
+}
+
+.editshow:hover {
+  background-color: #804000;
+}
+
+.deleteshow {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.deleteshow:hover {
+  background-color: #d9534f;
+}
+
+.updatereview {
+  font-size: 15px;
+  background-color: #804000;
+  border-color: #804000;
+}
+
+.updatereview:hover {
+  background-color: #804000;
+}
+
+.cancelreview {
+  font-size: 15px;
+  margin-left: 5px;
+  background-color: #55552b;
+  border-color: #55552b; 
+}
+
+.cancelreview:hover {
+  background-color: #55552b;
+}
+
+.edituser {
+  font-size: 15px;
+  background-color: #804000;
+  border-color: #804000;
+}
+
+.edituser:hover {
+  background-color: #804000;
+}
+
+.deleteuser {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.deleteuser:hover {
+  background-color: #d9534f;
+}
+
+.updatepro {
+  font-size: 15px;
+  background-color: #804000;
+  border-color: #804000;
+}
+
+.updatepro:hover {
+  background-color: #804000;
+}
+
+.cancelpro {
+  font-size: 15px;
+  margin-left: 5px;
+  background-color: #55552b;
+  border-color: #55552b; 
+}
+
+.cancelpro:hover {
+  background-color: #55552b; 
+}
+
+.savebutton {
+  font-size: 15px;
+  background-color: #804000;
+  border-color: #804000;
+}
+
+.savebutton:hover {
+  background-color: #804000;
+}
+
+.cancelnew {
+  font-size: 15px;
+  margin-left: 5px;
+  background-color: #55552b;
+  border-color: #55552b;
+}
+
+.cancelnew:hover {
+  background-color: #55552b;
+}
+
+#reviewtitle {
+  font-family: 'Lobster', cursive;
+  color: #804000;
+}
 
 
 
@@ -219,7 +350,10 @@ border-radius: 5px;
 
 
 
-/*#map {
-  height: 300px;
-  margin: 50px auto;
-}*/
+
+
+
+
+
+
+

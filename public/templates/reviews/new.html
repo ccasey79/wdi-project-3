@@ -1,6 +1,6 @@
 <div class="container">
   
-<h1>Add a new Review</h1>
+<h1 id="reviewtitle">Add a new Review</h1>
   <form ng-submit="reviewsNew.create()">
     <div class="form-group">
       <input places-autocomplete type="text" class="form-control" name="name" ng-model="reviewsNew.new.name" placeholder="Name">
@@ -18,7 +18,7 @@
       <input type="text" class="form-control" name="image" ng-model="reviewsNew.new.image" placeholder="Image">
     </div>
 
-    <button class="btn btn-info">Save</button>
-    <button class="btn btn-info" type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel</button>
+    <button class="btn btn-info savebutton">Save review</button>
+    <button class="btn btn-info cancelnew" type="button" ui-sref="reviewsShow({ id: reviewsEdit.selected._id })">Cancel review</button>
   </form>
 </div>

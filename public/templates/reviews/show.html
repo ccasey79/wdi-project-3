@@ -10,7 +10,7 @@
           <h3>{{ reviewsShow.selected.name }}</h3>
             <p>{{ reviewsShow.selected.content }}</p>
             <button class="btn btn-info editshow" ng-if="reviewsShow.canEdit" ui-sref="reviewsEdit({ id: reviewsShow.selected._id })">Edit review</button>
-            <button class="btn btn-info"  ng-if="reviewsShow.canEdit" ng-click="reviewsShow.delete()">Delete review</button>  
+            <button class="btn btn-info deleteshow"  ng-if="reviewsShow.canEdit" ng-click="reviewsShow.delete()">Delete review</button>  
         </div>
       </div>
     </div>
