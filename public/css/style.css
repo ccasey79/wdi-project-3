@@ -67,24 +67,10 @@ html, body {
   padding-top: 15px;
 }
 
-.showImage {
-  margin-left: 300px;
-}
-
 .reviewindex {
   background-color: #e0e0eb;
   border-radius: 5px;
 }
-
-/*.reviewedit  {
-  background-color: #e0e0eb;
-  border-radius: 5px;
-}*/
-
-/*.useredit {
-background-color: #e0e0eb;
-border-radius: 5px;
-}*/
 
 .homePage {
   background-image: url("/images/bulldog.jpg");
@@ -141,10 +127,6 @@ border-radius: 5px;
   border-radius: 15px;
   margin-top: 25px;
 }
-
-/*.registerWell {
-  text-align: center;
-}*/
 
 #submitReg {
   width: 300px;
@@ -360,19 +342,30 @@ border-radius: 5px;
 
 .thumbnail {
   display: block;
-  padding-top: 31px;
+  padding: 31px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border .2s ease-in-out;
-  margin-left: -243px;
-  margin-right: -153px;
+}  
+
+.col-md-9 {
+  width: 85%;
+  padding-top: 10px;
+  margin-left: 84px;
 }
 
+.col-md-4 {
+  width: 33.3%;
+  margin-top: 30px;
+}
 
-
+.col-md-10 {
+  width: 83.3%;
+  margin-top: 30px;
+}
 
 
 
